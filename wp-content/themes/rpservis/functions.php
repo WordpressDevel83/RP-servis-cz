@@ -24,6 +24,7 @@ add_action( 'after_setup_theme', 'rpservis_setup' );
 if ( ! function_exists( 'rpservis_block_stylesheets' ) ) :
     function rpservis_block_stylesheets() {
         wp_enqueue_style( 'rpservis-block-styles', get_template_directory_uri() . '/assets/css/blocks.css', null, null );
+        wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
     }
 endif;
 
